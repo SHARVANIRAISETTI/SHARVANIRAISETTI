@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matrimony Sign Up</title>
+  <link rel="stylesheet" href="./css/styles.css" >
+  <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="site-header">
+        <div class="brand">
+          <div class="logo">
+            <img src="./images/images.png" alt="SoulSync Logo" width="80" height="80" />
+          </div>
+          <div class="site-name">SoulSync</div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="./login.html" class="btn">Login</a></li>
+            <li><a href="./signup.html" class="btn">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="sign">
+    <div class="container">
+      <h2>Sign Up for SoulSync Matrimony</h2>
+      <form action="#" method="post">
+
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label>Full Name:</label>
+          <input type="text" name="full_name" required />
+
+          <label>Gender:</label>
+          <select name="gender" required>
+            <option value="">--Select--</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+
+          <label>Date of Birth:</label>
+          <input type="date" name="dob" required />
+
+          <label>Height (cm):</label>
+          <input type="number" name="height" required />
+
+          <label>Marital Status:</label>
+          <select name="marital_status" required>
+            <option>Never Married</option>
+            <option>Divorced</option>
+            <option>Widowed</option>
+          </select>
+
+          <label>Mother Tongue:</label>
+          <input type="text" name="mother_tongue" />
+        </fieldset>
+
+        <!-- Religious Details -->
+        <fieldset>
+          <legend>Religious Details</legend>
+          <label>Religion:</label>
+          <input type="text" name="religion" required />
+
+          <label>Caste / Community:</label>
+          <input type="text" name="caste" />
+
+          <label>Subcaste:</label>
+          <input type="text" name="subcaste" />
+
+          <label>Gothra:</label>
+          <input type="text" name="gothra" />
+        </fieldset>
+
+        <!-- Education & Profession -->
+        <fieldset>
+          <legend>Education & Profession</legend>
+          <label>Highest Education:</label>
+          <input type="text" name="education" required />
+
+          <label>Occupation:</label>
+          <input type="text" name="occupation" required />
+
+          <label>Annual Income:</label>
+          <input type="text" name="income" />
+
+          <label>Work Location:</label>
+          <input type="text" name="work_location" />
+        </fieldset>
+
+        <!-- Family Details -->
+        <fieldset>
+          <legend>Family Details</legend>
+          <label>Father's Name:</label>
+          <input type="text" name="father_name" />
+
+          <label>Mother's Name:</label>
+          <input type="text" name="mother_name" />
+
+          <label>Family Type:</label>
+          <select name="family_type">
+            <option>Joint</option>
+            <option>Nuclear</option>
+          </select>
+
+          <label>No. of Siblings:</label>
+          <input type="number" name="siblings" min="0" />
+        </fieldset>
+
+        <!-- Lifestyle & Hobbies -->
+        <fieldset>
+          <legend>Lifestyle & Hobbies</legend>
+          <label>Diet:</label>
+          <select name="diet">
+            <option>Vegetarian</option>
+            <option>Non-Vegetarian</option>
+            <option>Eggetarian</option>
+          </select>
+
+          <label>Hobbies:</label>
+          <textarea name="hobbies" placeholder="e.g. Reading, Travel, Music"></textarea>
+        </fieldset>
+
+        <!-- Contact Details -->
+        <fieldset>
+          <legend>Contact Details</legend>
+          <label>Mobile Number:</label>
+          <input type="tel" name="mobile" required />
+
+          <label>Email:</label>
+          <input type="email" name="email" required />
+
+          <label>Address:</label>
+          <textarea name="address" required></textarea>
+        </fieldset>
+
+        <!-- Login Information -->
+        <fieldset>
+          <legend>Login Information</legend>
+          <label>Username:</label>
+          <input type="text" name="username" required />
+
+          <label>Password:</label>
+          <input type="password" name="password" required />
+
+          <label>Confirm Password:</label>
+          <input type="password" name="confirm_password" required />
+        </fieldset>
+
+        <div class="submit-btn">
+          <button type="submit">Register</button>
+          <div class=flex><p>Already a User</p><a href="#login"> <button type="submit"> Login </button></a></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="footer">
+      <nav>
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="./login.html" class="btn">Login</a></li>
+          <li><a href="./signup.html" class="btn">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <p>&copy; 2024 SoulSync. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
